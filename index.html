@@ -1,45 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Generar y Agendar Eventos</title>
+  <title>Tarjeta con Imagen Responsive y Bootstrap</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <button onclick="generarYAgendarEventos()">Generar y Agendar Eventos</button>
-  <table id="eventosTable">
-    <tr>
-      <th>Evento</th>
-      <th>Fecha</th>
-      <th>Hora</th>
-    </tr>
-  </table>
-
-  <script>
-    function generarYAgendarEventos() {
-      // Lista de eventos generados (puedes modificar esta lista según tus necesidades)
-      const eventos = [
-        { nombre: 'Evento 1', fecha: '2023-07-30', hora: '10:00' },
-        { nombre: 'Evento 2', fecha: '2023-08-05', hora: '15:30' },
-        { nombre: 'Evento 3', fecha: '2023-08-10', hora: '19:00' }
-      ];
-
-      // Obtener referencia a la tabla
-      const eventosTable = document.getElementById('eventosTable');
-
-      // Limpiar la tabla
-      eventosTable.innerHTML = '<tr><th>Evento</th><th>Fecha</th><th>Hora</th></tr>';
-
-      // Agregar cada evento a la tabla
-      eventos.forEach(evento => {
-        const row = eventosTable.insertRow();
-        const nombreCell = row.insertCell();
-        const fechaCell = row.insertCell();
-        const horaCell = row.insertCell();
-
-        nombreCell.textContent = evento.nombre;
-        fechaCell.textContent = evento.fecha;
-        horaCell.textContent = evento.hora;
-      });
-    }
-  </script>
+<div class="Programa">
+    <div class="card">
+      <img src="./Foto/Programa.png" class="card-img-top" alt="Imagen del Coche">
+    </div>
+</div>
 </body>
 </html>
